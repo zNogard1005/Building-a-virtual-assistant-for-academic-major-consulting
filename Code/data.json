@@ -182,7 +182,7 @@
             "Xin điểm ngành Kinh tế",
             "diem chuan khmt",
             "Điểm chuẩn Công Nghệ Thông Tin học tại khu Hòa An",
-            "Điểm chuẩn Khoa học Máy Tính và Công nghệ Thông Tin là bao nhiêu?",
+            "Điểm chuẩn Khoa học Máy Tính và Công nghệ Thông Tin là bao nhiêu?"
          ],
          "responses": [
             "Ngành công nghệ thông tin điểm thi trúng tuyển năm 2021 là 25.75, điểm trúng tuyển học bạ 2021 là 28.50, Công nghệ thông tin (Hòa An) với điểm thi 23.50 và điểm học bạ là 24.25 và với Ngành Công nghệ thông tin chất lượng cao với điểm thi là 24.00 và điểm học bạ là 25.75",
@@ -372,7 +372,8 @@
             "he thong thong tin xet theo may phuong thuc",
             "phuong thuc nao danh cho he thong thong tin",
             "he thong thong tin xet theo hoc ba hay diem thi",
-            "ngành hệ thống thông tin xét học bạ sao v ạ"
+            "ngành hệ thống thông tin xét học bạ sao v ạ",
+            "phương thức xét tuyển ngành attt và ktpm"
          ],
          "responses": [
             "Hiện tại ngành công nghệ thông tin đại học cần thơ có 4 phương thức: Xét tuyển thẳng (Phương thức 1), Xét tuyển bằng điểm Kỳ thi tốt nghiệp THPT năm 2021 (Phương thức 2), Xét tuyển bằng điểm học bạ THPT (Phương thức 3) và Xét tuyển thẳng vào học bổ sung kiến thức (Phương thức 6) - Ngành công nghệ thông tin chất lượng cao sẽ Xét bằng điểm thi tốt nghiệp THPT (phương thức 2), điểm học bạ THPT (Phương thức 3) và Tuyển chọn theo Phương thức 5.",
@@ -505,7 +506,8 @@
             "nganh he thong thong tin dao tao sinh vien ki nang gi",
             "Ngành này học về nội dung gì",
             "Ngành này học những gì",
-            "Thời gian cần để hoàn thành được việc đào tạo"
+            "Thời gian cần để hoàn thành được việc đào tạo",
+            "chương trình đào tạo ngành ktpm và ktmt"
          ],
          "responses": [
             "Thời gian đạo tạo là 4.5 năm  với số tín chỉ là 155 Chuyên ngành Công nghệ thông tin (CNTT) với CNTT chất lượng cao học kỳ đầu tiên được học Chương trình bồi dưỡng Tiếng Anh (20 tín chỉ) và hơn 60% các môn học được giảng dạy bằng Tiếng Anh,Ngành đào tạo kỹ sư có kỹ năng và kiến thức để đảm nhận vị trí nghề nghiệp trong lĩnh vực CNTT, thăng tiến đến vị trí lãnh đạo, khả hành nghiên cứu  hoặc tiếp tục học cao hơn trong lĩnh vực này. Sinh viên ngành CNTT sẽ được trang bị những kiến thức nền tảng về cơ sở lý thuyết, toán và khoa học được sử dụng trong lĩnh vực CNTT, kiến thức chuyên sâu và các giải pháp về sản phẩm CNTT đương đại. Sau khi học xong chương trình, người học có khả năng giải thích và vận dụng kiến thức nền tảng, các giải pháp và sản phẩm CNTT thích hợp đáp ứng nhu cầu của một tổ chức hay cá nhân. Có 2 chuyên ngành là CNTT và Tin học ứng dụng",
@@ -847,7 +849,9 @@
             "Trường có hỗ trợ chỗ ở không",
             "Trường có hỗ trợ kí túc xá không ạ",
             "ký túc xá trường tốt không",
-            "chổ ở của trường có tốt không"
+            "chổ ở của trường có tốt không",
+            "tiền thuê ktx ntn",
+            "Tiền thuê ký túc xá"
          ],
          "responses": [
             "Ký túc xá (KTX) Trường Đại học Cần Thơ - địa chỉ tin cậy cho sinh viên an tâm sinh hoạt, học tập và rèn luyện. Với sức chứa hơn 10.000 sinh viên tọa lạc tại khu 2 và khu Hòa An (Phụng Hiệp - Hậu Giang), là nơi rất thuận tiện trong việc ăn ở, sinh hoạt và học tập tại Trường. KTX có hàng rào bao quanh, có lực lượng bảo vệ chuyên nghiệp 24/24.Tất cả sinh viên có nhu cầu ở KTX đều được bố trí vào ở ngay sau khi nộp hồ sơ nhập học."
@@ -1332,6 +1336,15 @@
          ],
          "responses": [
             "Hàng năm, Trường Công Nghệ Thông Tin và Truyền thông luôn có những đợt trao đổi sinh viên với các trường Đại học ở nhiều Quốc gia và Vùng lãnh thổ khác như: Thái Lan, Đài Loan,..."
+         ]
+      },
+      {
+         "tag": "Khó khăn",
+         "patterns": [
+            "COn gái học có khó khăn gì không"
+         ],
+         "responses": [
+            "Con gái không gặp nhiều trở ngại khi theo học các ngành máy tính và công nghệ"
          ]
       }
    ]

@@ -223,18 +223,18 @@
                     console.log(data);
 
                     var dt = data.split(' ');
-                    console.log(dt);
+<!--                    console.log(dt);-->
 
                     var len = dt.length-2;
-                    console.log(len);
+<!--                    console.log(len);-->
 
                     dt = dt.slice(0, len).join(' ');
-                    console.log(dt);
+<!--                    console.log(dt);-->
 
                     fileAudio = data.split(' ');
                     fileAudio = fileAudio.slice(fileAudio.length-len-1, fileAudio.length-1);
 
-                    var botHtml = '<div class="chat chat-left"><div class="chat-avatar"><a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher"><img src="https://www.bootdey.com/app/webroot/img/Content/avatar/avatar7.png" alt="..."></a></div><div class="chat-body"><div class="chat-content"><p>'+"Xin trả lời câu hỏi: "+rawText+ '</br>' +dt+'</p></div></div></div>';
+                    var botHtml = '<div class="chat chat-left"><div class="chat-avatar"><a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher"><img src="https://www.bootdey.com/app/webroot/img/Content/avatar/avatar7.png" alt="..."></a></div><div class="chat-body"><div class="chat-content"><p>'+"Xin trả lời câu hỏi: "+rawText+'</br>'+dt+'</p></div></div></div>';
                     $('#chatbot').append(botHtml);
                     document.getElementById("userInput").scrollIntoView({block:"start", behavior:"smooth"});
                 });

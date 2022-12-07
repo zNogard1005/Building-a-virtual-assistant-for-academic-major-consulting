@@ -29,16 +29,15 @@ def chatbot_response():
     msg1 = request.args.get('msg')
     connection = Database.create_connection("sm_app.sqlite")
     msg = Handing_Question.Handing(msg1)
-    print(msg)
+    # print(msg)
     res = ""
-    # t="test2"
     tag_temp = ""
     for i in msg:
         # print(i)
         int = predict_class(i, Model)
         # print(msg[i])
         r, tag_question = getResponse(int, intents, msg[i])
-        tag_temp = tag_temp + tag_question + " "
+        tag_temp = tag_temp + tag_question
         res = res + "</br>" + r + "</br>"
         print(res)
     mp3, len = fileaudio_text(tag_temp)
@@ -65,7 +64,7 @@ def fileaudio_text(tag):
     # print(file)
     r = ""
     for i in file:
-        r = r + "static/audio/"+i+".mp3"+" "
+        r = r + i +" "
     return r, len(file)
 
 @app.route('/add_question/<string:str>',methods=['GET','POST'])
@@ -114,7 +113,7 @@ def predict_class(sentence, Model):
     if np.array_equal(p, temp):
         return []
     res = Model.predict(np.array([p]))[0]
-    # print(res)
+    print(res)
     ERROR_THRESHOLD = 0.9
     result = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     print(result)
@@ -141,13 +140,13 @@ def getResponse(ints, intent_json, stt):
             if i["tag"] == tag:
                 if len(i['responses']) == 1:
                     result = i['responses'][0]
-                    print(result)
+                    #print(result)
                     res_tag = tag
                     print(res_tag)
                     break
                 else:
                     result = i['responses'][8]
-                    print(result)
+                    #print(result)
                     res_tag = tag+str(8)
                     print(res_tag)
                     break
@@ -155,13 +154,13 @@ def getResponse(ints, intent_json, stt):
             if i["tag"] == tag:
                 if len(i['responses']) == 1:
                     result = i['responses'][0]
-                    print(result)
+                    #print(result)
                     res_tag = tag
                     print(res_tag)
                     break
                 else:
                     result = i['responses'][stt]
-                    print(result)
+                    #print(result)
                     res_tag = tag + str(stt)
                     print(res_tag)
                     break
