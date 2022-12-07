@@ -39,7 +39,7 @@ def chatbot_response():
         r, tag_question = getResponse(int, intents, msg[i])
         tag_temp = tag_temp + tag_question
         res = res + "</br>" + r + "</br>"
-        print(res)
+        # print(res)
     mp3, len = fileaudio_text(tag_temp)
     Database.execute_query_insert(connection, msg1, tag_temp)
     return res + " " + mp3 + str(len)
@@ -113,15 +113,15 @@ def predict_class(sentence, Model):
     if np.array_equal(p, temp):
         return []
     res = Model.predict(np.array([p]))[0]
-    print(res)
+    # print(res)
     ERROR_THRESHOLD = 0.9
     result = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
-    print(result)
+    # print(result)
     result.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in result:
         return_list.append({"intents": classes[r[0]], "probability": str(r[1])})
-        print(classes[r[0]])
+        # print(classes[r[0]])
     return return_list
 
 def getResponse(ints, intent_json, stt):
